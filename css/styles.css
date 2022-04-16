@@ -1,2 +1,20 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
+
+
+/* #303030
+#FFFFFF
+#9DA4BD
+#FF6C00
+#F7F7F7
+#555555
+#000000 */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9DA4BD;
+}
