@@ -1,3 +1,6 @@
+/* Сtrl+F - знайти */
+/* Сtrl+H - замінити */
+
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
@@ -10,11 +13,72 @@ font-family: 'Raleway', sans-serif; */
 #555555
 #000000 */
 
+:root {
+  /* Основні шрифти */
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Світла тема тексту */
+  --primary-txt-light: #555555;
+  --secondary-txt-light: #303030;
+  --accent-txt-light: #FF6C00;
+
+  /* Темна тема тексту */
+  --primary-txt-dark: #FFFFFF;
+  --secondary-txt-dark: #9DA4BD;
+  --accent-txt-dark: rgba(157, 164, 189, 0.6);
+
+  /* Світла тема фону */
+  --primary-bg-light: #FFFFFF;
+  --secondary-bg-light: #F7F7F7;
+
+  /* Темна тема фону */
+  --primary-bg-dark: #191C26;
+
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 
-  color: #9DA4BD;
+  color: var(--primary-txt-light);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-bg-dark);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--primary-txt-dark);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-txt-light);
+}
+
+.header-phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--primary-txt-dark);
 }
