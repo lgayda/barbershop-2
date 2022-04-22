@@ -17,11 +17,11 @@ font-family: 'Raleway', sans-serif; */
   /* Основні шрифти */
   --main-font: 'Open Sans', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
+  --accent-cl:#FF6C00;
 
   /* Світла тема тексту */
   --primary-txt-light: #555555;
   --secondary-txt-light: #303030;
-  --accent-txt-light: #FF6C00;
 
   /* Темна тема тексту */
   --primary-txt-dark: #FFFFFF;
@@ -120,6 +120,26 @@ body {
   color: var(--primary-txt-dark);
 }
 
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--accent-cl);
+  color: var(--primary-txt-dark);
+}
+
+.public-link {
+  font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+
+color: var(--secondary-txt-light);
+}
+
+.public-link:hover,
+.public-link:focus {
+  color: var(--accent-cl);
+}
+
 /* Header */
 .header {
   background-color: var(--primary-bg-dark);
@@ -139,7 +159,7 @@ body {
 .nav-link:focus,
 .header-phone:hover,
 .header-phone:focus {
-  color: var(--accent-txt-light);
+  color: var(--accent-cl);
 }
 
 .header-phone {
@@ -151,20 +171,6 @@ body {
   background-color: var(--primary-bg-dark);
 }
 
-.public-link {
-  font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.2em;
-
-color: var(--secondary-txt-light);
-}
-
-.public-link:hover,
-.public-link:focus {
-  color: var(--accent-txt-light);
-}
-
 .hero-tittle {
   font-family: 'Raleway';
   font-weight: 700;
@@ -173,4 +179,127 @@ color: var(--secondary-txt-light);
   letter-spacing: 0.05em;
 
   color: var(--primary-txt-dark);
+}
+
+.hero-btn {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  color: var(--accent-txt-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--primary-txt-dark);
+}
+
+/* About */
+.about {
+  background-color: var(--primary-bg-light);
+}
+
+.about-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-txt-light);
+}
+
+/* Prise */
+.prise {
+  background-color: var(--primary-bg-dark);
+}
+
+.prise-inner-item,
+.prise-inner-txt {
+  color: var(--secondary-txt-dark);
+}
+
+/* Advantages */
+.advantages-quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-txt-light);
+}
+
+.advantages-descr {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  color: var(--secondary-txt-light);
+}
+
+/*Team */
+.team {
+  background-color: var(--secondary-bg-light);
+}
+
+.team-item {
+  cursor: pointer;
+}
+
+.team-headline {
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-light);
+}
+
+.team-position {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-cl);
+}
+
+.socials-item:hover,
+.socials-item:focus {
+  color: var(--accent-cl);
+}
+
+/* Contacts */
+.contacts {
+  background-color: var(--primary-bg-dark);
+}
+
+.contacts-item {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-dark);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link {
+  color: currentColor;
+}
+
+.subtittle-time {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--primary-txt-dark);
+}
+
+.contacts-schedule {
+  color: var(--secondary-txt-dark);
 }
